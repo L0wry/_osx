@@ -1,5 +1,6 @@
 
 source ~/.profile
+export ES_HOME=~/apps/elasticsearch/elasticsearch-1.7.5
 
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
@@ -7,11 +8,16 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 export NVM_DIR="/Users/mattlowry/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+
+
 alias ls='ls -GFh'
 
  if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
   fi
+
+
+
   
   export TERM=xterm-color
   export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
